@@ -1,0 +1,367 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Yanone+Kaffeesatz&display=swap'); 
+
+* {
+    box-sizing: border-box; 
+}
+
+img {
+    display: block;     
+    width: 100%;    
+    
+}
+body { 
+    margin: 0;
+    font-family: 'Open Sans',sans-serif; 
+}
+h1,h2,h3,h4,h5,h6 { 
+
+    font-family: 'Yanone Kaffeesatz', sans-serif; 
+}
+
+.section__titulo {
+        text-align: center;
+        font-size: 50px;
+        color: white;
+} 
+.contenedor {
+    margin: auto;
+    width: 99%;
+}
+
+
+/*----------------Buscador de contenido--------------*/
+
+
+body {
+    background: #343d46;
+}
+
+.box {
+    margin: 5px auto;
+    width: 300px;
+    height: 50px;
+}
+.container-1{
+    width: 170px;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+.container-1 input#search {
+    width: 200px;
+    height: 40px;
+    background: #2b303b;
+    border: none;
+    font-size: 10pt;
+    float: left;
+    color: #fff;
+    padding-left: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: background 55s ease;
+    -moz-transition: background 55s ease;
+    -ms-transition : background 55s ease;
+    -o-transition: background 55s ease;
+    transition: background 55s ease;
+}
+.container-1 input#search::-webkit-input-placeholder {
+    color: #65737e;
+}
+.container-1 input#search:-moz-placeholder {
+    color: #65737e;
+}
+.container-1 input#search:-moz-placeholder {
+    color: #65737e;
+}
+.container-1 input#search:-ms-input-placeholder{
+    color: #65737e;
+}
+
+.container-1 button.icon{
+    -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  border: none;
+  background: #232833;
+  height: 40px;
+  width: 50px;
+  color: #4f5b66;
+  opacity: 0;
+  font-size: 10pt;
+
+  -webkit-transition: all .55s ease;
+  -moz-transition: all .55s ease;
+  -ms-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+.container-1:hover button.icon, .container-1:active button.icon, .container-1:focus button.icon{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+.container-1:hover button.icon:hover{
+    background: white;
+}
+.container-1 input#search:hover,.container-1 input#search:focus,.container-1 input#search:active{
+    outline: none;
+    background: #ffffff;
+}
+
+/*----------------Estilos del header-----------------*/ 
+
+.header { 
+    height: 50px;
+   
+}
+.header .contenedor { 
+    display: flex; 
+    justify-content: space-between;
+    color: rgb(22, 21, 19);   
+    position: relative; 
+}
+
+.logo,.fa-bars { 
+    
+    margin: 5px;
+    color: white;
+     
+} 
+
+.fa-bars { 
+    display: block; 
+    width: 40px; 
+    height: 40px; 
+    font-size: 30; 
+    background: grey;     
+    text-align:center;
+    line-height: 45px;
+    border-radius: 5px;
+    margin-left: auto;
+    cursor: pointer; 
+} 
+/*----------------Estilos del menu--------------*/ 
+.nav { 
+    position: absolute;
+    top: 60px; 
+    left: -100%;
+    width: 100%; 
+    transition: all 0.2s; 
+} 
+.menu { 
+    list-style: none; 
+    padding: 0;
+    margin-right: 60px;   
+   
+   
+} 
+.menu__link {
+    display: block;
+    padding: 7px; 
+    background: rgb(51, 50, 49); 
+    text-decoration: none;
+    color: #fff; 
+} 
+.menu__link:hover, .select { 
+    background: white;
+    color: dimgray;
+} 
+.mostrar { 
+    left: 0; 
+} 
+
+/******Estilos de banner******/
+
+.banner {
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+  }  
+.banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    color: white;
+    text-align: center;
+  }
+
+.banner__txt { 
+      display: none;
+  }
+table {
+    width: 180%;
+}
+  
+  /*-----------------Estilos de info-----------------*/
+.info__columna {
+    background: grey;
+    color: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+  /*-----------------Estilos de cursos-----------------*/
+.contacto__columna {    
+      position: relative;
+      margin-bottom: 30px;
+      align-content: center;
+}
+  
+.contacto__description {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: white;
+      background: rgba(0,0,0,0.5);
+      width: 60%;
+      height: 100%;
+      padding: 5px;
+  }
+.contacto__titulo {
+      font-size: 25px;
+      margin: 5px 0;
+  }
+/*-----------------Estilos de footer-----------------*/
+.footer {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+.footer .social [class^="fab fa-"] {
+    display: inline-block;
+    color:#333;
+    text-decoration: none;
+    font-size: 30px;
+    padding: 10px;
+    background: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 30px;
+}
+/*-----------------Estilos de responsive-----------------*/
+
+@media(min-width:480px) {
+    .logoTop {
+        width: 100px;
+    }
+    .logo {
+        font-size: 50px;
+        margin-top: 50px;
+        margin-left: 20px;
+        color: purple;
+    }
+    .banner__titulo {
+        font-size: 25px;
+        margin: 5px;
+        margin-left: 170px;
+
+    }
+    .banner__txt {
+        display: block;
+        font-size: 18px;
+        margin: 7px;
+    }
+    .info, .contacto {
+        display: flex;
+        justify-content: space-between;
+        margin-top: -90px;
+    }
+    .info__columna {
+        width: 32%;
+    } 
+    .info__titulo {
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    .section__titulo {
+        width: 100px;      
+    } 
+    .contacto {
+        flex-wrap: wrap;
+        margin-top: 0;
+    }
+    .contacto__columna {
+        width: 49%;
+    } 
+    .footer .social [class^="fab fa-"] {
+       margin: 0 10px; 
+    } 
+}
+@media(min-width:768px) {
+    .logoTop {
+        width: 150px;
+    }
+    .banner__titulo {
+        font-size: 50px;        
+    }
+    .contacto__titulo {
+        font-size: 40px;
+    }
+}
+
+@media(min-width:1024px) {
+    .logoTop {
+        width: 200px;
+    }
+    .contenedor {
+        width: 1000px;
+    }     
+    .section__titulo {
+        font-size: 50px;
+        margin: 30px 0;
+    }
+    .nav {
+        position: static;
+        width: auto;
+    }
+    .menu {
+        display: flex;
+    }
+    .fas.fa-bars {
+        display: none;
+
+    }    
+    .menu__link {
+      background: none; 
+      font-size: 20px; 
+    }
+    .select {
+        color: #fff;
+        background: dimgray ;
+    }
+    .banner__titulo {
+        font-size: 60px;           
+    }
+    .banner__txt {
+        font-size: 25px;
+    }
+    .info {
+      margin-top: -110;  
+    }
+    .info__titulo {
+        font-size: 40px;
+        text-align: center;        
+    }
+    .contacto__description {
+        padding: 20px;
+    }
+    .contacto__titulo {
+        font-size: 50px;
+    }
+    .contacto__txt {
+        font-size: 20px;
+    }
+}
+
+
+  
