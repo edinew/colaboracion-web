@@ -1,78 +1,72 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Top 20</title>
-		<link rel="stylesheet" href="css/estilosTop20.css">
-	</head>
-	<body>
-		
-		<div class="fondo">        
-			<img src="img/musicaDos.jpg" alt="" class="manos__img">
-			<div class="info">
-				<table >
-					<table>
-						<tr>
-						  <th>#</th>
-						  <th>Cancion</th>
-						  <th>Genero</th>
-						  <th>Artista</th>
-						</tr>
-						<tr>
-						  <td>Alfreds Futterkiste</td>
-						  <td>Maria Anders</td>
-						  <td>Germany</td>
-						  <td>Germany</td>
-						</tr>
-						<tr>
-						  <td>Centro comercial Moctezuma</td>
-						  <td>Francisco Chang</td>
-						  <td>Mexico</td>
-						  <td>Germany</td>
-						</tr>
-						<tr>
-						  <td>Ernst Handel</td>
-						  <td>Roland Mendel</td>
-						  <td>Austria</td>
-						  <td>Germany</td>
-						</tr>
-						<tr>
-						  <td>Island Trading</td>
-						  <td>Helen Bennett</td>
-						  <td>UK</td>
-						  <td>Germany</td>
-						</tr>
-						<tr>
-						  <td>Laughing Bacchus Winecellars</td>
-						  <td>Yoshi Tannamuri</td>
-						  <td>Canada</td>
-						  <td>Germany</td>
-						</tr>
-						<tr>
-						  <td>Magazzini Alimentari Riuniti</td>
-						  <td>Giovanni Rovelli</td>
-						  <td>Italy</td>
-						  <td>Germany</td>
-						</tr>
-					  </table>
-			</table>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Top 20</title>
+	<link rel="stylesheet" href="css/estilosTop20.css">
+	<script src="js/script.js"></script>
+</head>
+
+<body>
+
+
+
+	<div class="fondo">
+		<h1>Reproductor</h1>
+		<img src="img/musicaDos.jpg" alt="" class="manos__img">
+		<div class="info">
+			<div class="contenedor">
+				<div class="pistas">
+					<img src="img/musicaCuatro.jpg" alt="" class="info__img">
+					<h2 class="info__titulo">Pistas</h2>
+					<select class="lista" id="selectTrack" multiple
+						onchange="cambiarTrack(this.options[this.selectedIndex]);">
+						<option path="musica/Red Hot Chili Peppers - Otherside (NUEVOEXITO.ORG).mp3">Otherside - Red Hot
+							Chili Peppers</option>
+						<option path="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3">
+							Californication -
+							Red Hot Chili Peppers</option>
+						<option path="../music/how-deep-is-your-love.mp3">Bee Geees - How deep is your love</option>
+					</select>
+				</div>
+				<div class="pistas">
+					<img src="img/musicaCuatro.jpg" alt="" class="info__img">
+					<h2 class="info__titulo">Generos</h2>
+					<select class="lista" id="selectTrack" multiple
+						onchange="cambiarTrack(this.options[this.selectedIndex]);">
+						<option path="musica/Red Hot Chili Peppers - Otherside (NUEVOEXITO.ORG).mp3">Otherside - Red Hot
+							Chili Peppers</option>
+						<option path="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3">
+							Californication -
+							Red Hot Chili Peppers</option>
+						<option path="../music/how-deep-is-your-love.mp3">Bee Geees - How deep is your love</option>
+					</select>
+				</div>
+				<div class="pistas">
+					<img src="img/musicaCuatro.jpg" alt="" class="info__img">
+					<h2 class="info__titulo">Artistas</h2>
+					<select class="lista" id="selectTrack" multiple
+						onchange="cambiarTrack(this.options[this.selectedIndex]);">
+						<option path="musica/Red Hot Chili Peppers - Otherside (NUEVOEXITO.ORG).mp3">Otherside - Red Hot
+							Chili Peppers</option>
+						<option path="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3">
+							Californication -
+							Red Hot Chili Peppers</option>
+						<option path="../music/how-deep-is-your-love.mp3">Bee Geees - How deep is your love</option>
+					</select>
+				</div>
+				
+
+
 			</div>
-    	</div>
-						
-		 	
-			<audio controls>
-					<source src="musica/Red Hot Chili Peppers - Otherside (NUEVOEXITO.ORG).mp3" type = "audio/mpeg">
-						
-				</audio
-				>
-			
-            
-       
-		
-
-		
-	</body>
-	</html>
-
+		</div>
+		<div id="reproductorBox"></div>
+	</div>
 	
+	<script>cargarReproductor();</script>
+
+</body>
+
+</html>
