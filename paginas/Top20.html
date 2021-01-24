@@ -1,43 +1,70 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>Top 20</title>
-	</head>
-	<body>
-		
-		<div class="contenedor">
-        <div class="banner">
-            <img src="img/musicaDos.jpg" alt="" class="manos__img">
-            <div class="contenedor">
-                <table>
-                	<tr>
-                		<th>#</th>
-                		<th>Nombre</th>
-                		<th>Artista</th>
-                		<th>Genero</th>
-                	</tr>
-                </table>
+<!DOCTYPE html>
+<html lang="en">
 
-            </div>
-        </div>
-    </div>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Top 20</title>
+	<link rel="stylesheet" href="css/estilosTop20.css">
+	<script src="js/script.js"></script>
+</head>
+
+<body>
 
 
-		
-				
 
-		
-		
+	<div class="fondo">
+		<h1>Reproductor</h1>
+		<img src="img/musicaDos.jpg" alt="" class="manos__img">
+		<div class="info">
 
-		<!-- <audio controls>
-	    <source src="horse.ogg" type="audio/ogg">
-		<source src="horse.mp3" type="audio/mpeg">
-		Your browser does not support the audio element.
-		</audio>
-		 -->
-	</body>
-	</html>
+			<div class="contenedor">
+				<div class="pistas">
+					<img src="img/musicaCuatro.jpg" alt="" class="info__img">
+					<h2 class="info__titulo">Pistas</h2>
+					<select class="lista" id="selectTrack" multiple
+						onchange="cambiarTrack(this.options[this.selectedIndex]);">
+						<option path="musica/Red Hot Chili Peppers - Otherside (NUEVOEXITO.ORG).mp3">Otherside - Red Hot
+							Chili Peppers</option>
+						<option path="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3">
+							Californication -
+							Red Hot Chili Peppers</option>
+						<option path="../music/how-deep-is-your-love.mp3">Bee Geees - How deep is your love</option>
+					</select>
+				</div>
+				<div class="pistas">
+					<img src="img/musicaCuatro.jpg" alt="" class="info__img">
+					<h2 class="info__titulo">Generos</h2>
+					<select class="lista" id="selectTrack" multiple
+						onchange="cambiarTrack(this.options[this.selectedIndex]);">
+						<option path="musica/Red Hot Chili Peppers - Otherside (NUEVOEXITO.ORG).mp3">Otherside - Red Hot
+							Chili Peppers</option>
+						<option path="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3">
+							Californication -
+							Red Hot Chili Peppers</option>
+						<option path="../music/how-deep-is-your-love.mp3">Bee Geees - How deep is your love</option>
+					</select>
+				</div>
+				<div class="pistas">
+					<img src="img/musicaCuatro.jpg" alt="" class="info__img">
+					<h2 class="info__titulo">Artistas</h2>
+					<select class="lista" id="selectTrack" multiple
+						onchange="cambiarTrack(this.options[this.selectedIndex]);">
+						<option path="musica/Red Hot Chili Peppers - Otherside (NUEVOEXITO.ORG).mp3">Otherside - Red Hot
+							Chili Peppers</option>
+						<option path="musica/Red Hot Chili Peppers - Californication (NUEVOEXITO.ORG).mp3">
+							Californication -
+							Red Hot Chili Peppers</option>
+						<option path="../music/how-deep-is-your-love.mp3">Bee Geees - How deep is your love</option>
+					</select>
+				</div>
+			</div>
+		</div>
+		<div id="reproductorBox"></div>
+	</div>
 
-	
+	<script>cargarReproductor();</script>
+
+</body>
+
+</html>
