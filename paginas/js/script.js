@@ -1,5 +1,3 @@
-document.write("Hola mundo")
-
 function cambiarTrack(track) {
     var path = track.getAttribute("path")
     viejo_audio = document.getElementById("reproductor")
